@@ -27,7 +27,7 @@ import axios from 'axios'
 					axios.get('https://maps.googleapis.com/maps/api/geocode/json?', {
 				    	params:{
 				    		address: e.target.value,
-				    		key: 'AIzaSyB1Kjn1hDnRboxVRPEvzxDFP3EU8mjZ400'
+				    		key: 'put your key here'
 				    	}
 				    })
 				    	.then(response => {
@@ -39,7 +39,7 @@ import axios from 'axios'
 								params:{
 									lat: lat,
 									lng: lng,
-									access_token: '3243165896.ba4c844.78bbe9d6d38c46c8953c5b06f2cb88ea'
+									access_token: 'put your acess token here'
 								}
 							}).then(response => {
 				    		 	this.$store.commit('setData', response.data.data)
